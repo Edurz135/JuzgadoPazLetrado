@@ -32,7 +32,7 @@ with open(erdplus_sql_path, "r") as file:
             current_migration_file = open(output_path + f"{current_migration_idx:02}" + "_create_" + table_name + ".sql", "w")
             current_migration_file.write("-- UP\n")
             onHeader = False
-        
+
         current_migration_file.write(line)
 
         if line == "\n":

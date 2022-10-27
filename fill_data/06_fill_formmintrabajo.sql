@@ -1,0 +1,10 @@
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Mycat', 17310202794, 'Diverse directional migration');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Wordtune', 72777002223, 'Realigned mission-critical open system');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Aibox', 93931655275, 'Multi-tiered actuating open architecture');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Zazio', 41691594935, 'User-friendly neutral knowledge user');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Twinder', 13759457830, 'Persistent zero administration superstructure');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Twitternation', 78372924038, 'Extended radical parallelism');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Tavu', 22079222798, 'Public-key maximized application');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Yamia', 55531555200, 'Implemented asynchronous extranet');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('BlogXS', 44533537279, 'Phased content-based access');
+insert into FORMMINTRABAJO (NOMBRE_LUGAR_TRABAJO, RUC_LUGAR_TRABAJO, OBSERVACIONES) values ('Yadel', 62622112673, 'Universal exuding infrastructure');

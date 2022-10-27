@@ -1,0 +1,10 @@
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (3, 2, 'Business-focused global forecast');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (3, 1, 'Reactive 24/7 framework');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (3, 2, 'Progressive uniform throughput');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (3, 2, 'Vision-oriented optimizing encryption');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (1, 2, 'Devolved non-volatile circuit');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (1, 3, 'Operative background synergy');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (3, 1, 'Balanced multimedia archive');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (3, 3, 'Public-key full-range portal');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (3, 3, 'Ameliorated 3rd generation policy');
+insert into FORMSUNARP (NRO_PROPIEDADES, NRO_VEHICULOS, OBSERVACIONES) values (2, 2, 'Business-focused grid-enabled internet solution');

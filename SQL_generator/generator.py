@@ -3,7 +3,7 @@ output_path = os.path.dirname(os.path.realpath(__file__)) + "/output/"
 erdplus_sql_path = os.path.dirname(os.path.realpath(__file__)) + "/erdplus_sql.txt"
 
 def generate_autoincrement(table_name):
-    return (f"CREATE SEQUENCE {table_name.upper()}_SEQ START WITH 0;\n"
+    return (f"CREATE SEQUENCE {table_name.upper()}_SEQ START WITH 1;\n"
             f"\n"
             f"CREATE OR REPLACE TRIGGER {table_name.upper()}_PK \n"
             f"BEFORE INSERT ON {table_name.upper()} \n"

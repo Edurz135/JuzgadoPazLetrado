@@ -1,2 +1,2 @@
-insert into SEXO (NOMBRE) values ("FEMENINO");
-insert into SEXO (NOMBRE) values ("MASCULINO");
+insert into SEXO (NOMBRE) values ('FEMENINO');
+insert into SEXO (NOMBRE) values ('MASCULINO');

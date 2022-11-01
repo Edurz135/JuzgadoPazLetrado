@@ -1,4 +1,4 @@
-insert into GRADOINSTRUCCION (NOMBRE) values ('SOLTERO');
-insert into GRADOINSTRUCCION (NOMBRE) values ('CASADO');
-insert into GRADOINSTRUCCION (NOMBRE) values ('VIUDO');
-insert into GRADOINSTRUCCION (NOMBRE) values ('DIVORCIADO');
+insert into ESTADOCIVIL (NOMBRE) values ('SOLTERO');
+insert into ESTADOCIVIL (NOMBRE) values ('CASADO');
+insert into ESTADOCIVIL (NOMBRE) values ('VIUDO');
+insert into ESTADOCIVIL (NOMBRE) values ('DIVORCIADO');

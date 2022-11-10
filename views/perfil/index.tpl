@@ -1,5 +1,5 @@
 % include('_header.tpl')
   <h1>Perfil</h1>
   <label></label>
-  <p>asdfaksjdf;laksdfj;lasdkfjl;ksd</p>
+  <p>Soy Joaquin Incio</p>
 % include('_footer.tpl')

@@ -1,11 +1,31 @@
 % include('_header.tpl')
-  <h1>Perfil</h1>
+  <h1>Mi Perfil</h1>
+  <p>En esta pestaña encontrará los perfiles pertenecientes a los Jueces de Paz Letrado.</p>
+  % for perfil in locals['perfil']:
   <label></label>
   <p>Informacion general del perfil del Juez</p>
   <p></p>
   <p></p>
-  <p>Nombres: </p>
-  <p>Apellidos: </p>
-  <p>Numero de Colegiatura: </p>
-  <p>DNI: </p>
+  <p><b>Nombres: <b>{{ perfil["juez_nombres"] }}</p>
+  <p><b>Apellidos: <b>{{ perfil["juez_apellidos"] }}</p>
+  <p>Numero de Colegiatura: <b>{{ perfil["juez.nro_colegiatura"] }}</p>
+  <p>DNI: <b>{{ perfil["juez_dni"] }}</p>
+  <p>Usuario: <b>{{ perfil["juez_usuario"] }}</p>
+  <p>Contraseña: <b>{{ perfil["juez_contrasena"] }}</p>
+  <p>Dirección del Juzgado: <b>{{ perfil["juez_direccion"] }}</p>
+  <p>Sexo: <b>{{ perfil["juez_sexo"] }}</p>
+  </p></p>
+  <a
+      href="#"
+      style="
+        text-decoration: none;
+        background-color: #000000;
+        color: white;
+        padding: 7px 12px;
+        border-radius: 10px;
+      "
+    >
+      Editar
+    </a>
+% end
 % include('_footer.tpl')

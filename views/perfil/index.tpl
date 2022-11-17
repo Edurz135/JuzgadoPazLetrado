@@ -1,21 +1,24 @@
 % include('_header.tpl')
-<h1>Mi Perfil</h1>
-<p>
-  En esta pestaña encontrará su perfil registrado en el Juzgado de Paz Letrado
+<h1 style="font-family: Helvetica">Mi Perfil</h1>
+<p style="line-height: 0; font-family: Calibri">
+  En esta pestaña encontrará su perfil registrado en el Juzgado de Paz Letrado.
 </p>
 % for perfil in locals['perfil']:
 <label></label>
-<br/>
-<h3>╁ Informacion general del perfil del Juez</h3>
+<h3><p style="font-family: Calibri">╁ Informacion general del perfil del Juez</h3>
 
-<p><b>Nombres: </b>{{ perfil["juez_nombres"] }}</p>
-<p><b>Apellidos: </b>{{ perfil["juez_apellidos"] }}</p>
-<p><b>Numero de Colegiatura: </b>{{ perfil["juez_nro_colegiatura"] }}</p>
-<p><b>DNI: </b>{{ perfil["juez_dni"] }}</p>
-<p><b>Usuario: </b>{{ perfil["juez_usuario"] }}</p>
-<p><b>Contraseña: </b>{{ perfil["juez_contrasena"] }}</p>
-<p><b>Dirección del Juzgado: </b>{{ perfil["juez_direccion"] }}</p>
-<p><b>Sexo: </b>{{ perfil["juez_sexo"] }}</p>
+<p style="font-family: Calibri">
+  <b>Nombres: </b>{{ perfil["juez_nombres"] }}<br>
+  <b>Apellidos: </b>{{ perfil["juez_apellidos"] }}<br>
+  <b>Numero de Colegiatura: </b>{{ perfil["juez_nro_colegiatura"] }}<br>
+  <b>DNI: </b>{{ perfil["juez_dni"] }}<br>
+  <b>Usuario: </b>{{ perfil["juez_usuario"] }}<br>
+  <b>Contraseña: </b>{{ perfil["juez_contrasena"] }}<br>
+  <b>Dirección del Juzgado: </b>{{ perfil["juez_direccion"] }}<br>
+  <b>Sexo: </b>{{ perfil["juez_sexo"] }}
+</p>
+
+<br>
 
 <a
   href="/perfil/editar"
@@ -23,11 +26,15 @@
     text-decoration: none;
     background-color: #000000;
     color: white;
-    padding: 7px 12px;
-    border-radius: 10px;
+    padding: 7px 50px;
+    border-radius: 12px;
+    font-family: Calibri
   "
 >
   Editar
 </a>
 % end
 % include('_footer.tpl')
+
+
+<!- <br/> ->

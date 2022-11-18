@@ -34,4 +34,4 @@
       Cerrar sesión</a>
   </li>
 </ul>
-<div id="app-container" style="margin-left: 20%; padding: 1px 16px; padding-bottom: 30px;">
+<div id="app-container" style="margin-left: 300px; padding: 1px 3vw; padding-bottom: 30px;">

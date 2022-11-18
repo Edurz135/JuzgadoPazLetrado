@@ -1,13 +1,13 @@
 % include('_header.tpl')
 % for expediente in locals['expedientes']:
 
-<h1 style="font-family: Helvetica; font-size: 40px">
+<h1>
   Expediente de DNI: {{ expediente["reniec_dni"] }}
 </h1>
 
-<p style="line-height: 0; font-family: Calibri; font-size: 20px; margin-bottom: 2em;">
+<p style="margin-bottom: 2em;">
   En esta pestaña encontrará todo la información refererida al expediente Nro.
-  {{ expediente["expediente_nro"] }}
+  {{ expediente["expediente_nro"] }} y también la información del secretario judicial que aprobó la información presente.
 </p>
 <div style="display: flex; flex-direction: row; margin-bottom: 2em;">
   <div

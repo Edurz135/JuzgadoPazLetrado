@@ -1,6 +1,6 @@
 % include('_header.tpl')
 <h1 style="font-family: Helvetica">Mi Perfil</h1>
-<p style="line-height: 0; font-family: Calibri">
+<p style="font-family: Calibri">
   En esta pestaña encontrará su perfil registrado en el Juzgado de Paz Letrado.
 </p>
 % for perfil in locals['perfil']:

@@ -22,7 +22,7 @@
     <p><b>Tipo: </b> {{ demanda["tipodemanda_nombre"] }}</p>
     <p><b>Estado: </b> {{ demanda["estadodemanda_nombre"] }}</p>
     <a
-      href="#"
+      href="/demandas/detail?demanda_id={{demanda["demanda_id"]}}"
       style="
         text-decoration: none;
         background-color: #9b1513;

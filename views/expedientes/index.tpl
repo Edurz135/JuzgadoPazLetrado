@@ -15,24 +15,23 @@
       box-shadow: 0px 4px 10px #aaaaaa;
     "
   >
-    <form action="/expedientes/detail" method="GET">
-      <label style="font-size: 16px; color: white;">DNI</label><br/>
-      <input
-        id="dni_input"
-        type="text"
-        style="
-          border-radius: 5px;
-          min-width: 300px;
-          height: 35px;
-          font-size: 16px;
-        " required
-      />
-      <br />
-      <br />
-      <div style="display: flex; justify-content: center">
-        <button id="dni_button" style="background: black; padding: 5px 40px; border-radius: 0.5em; text-decoration: none; color: white">Buscar</button>
-      </div>
-    </form>
+    <label style="font-size: 16px; color: white;">DNI</label><br/>
+    <input
+      id="dni_input"
+      type="text"
+      style="
+        border-radius: 5px;
+        min-width: 300px;
+        height: 35px;
+        font-size: 16px;
+      " required
+      value="29909077"
+    />
+    <br />
+    <br />
+    <div style="display: flex; justify-content: center">
+      <button id="dni_button" style="background: black; padding: 5px 40px; border-radius: 0.5em; text-decoration: none; color: white">Buscar</button>
+    </div>
   </div>
 </div>
 % include('_footer.tpl')

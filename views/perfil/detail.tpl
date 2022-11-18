@@ -8,6 +8,7 @@
 <br/>
 <h3>╁ Informacion general del perfil del Juez</h3>
 <form action="/perfil/grabar" method="post">
+  <input type="hidden" name="juez_id" value="{{perfil['juez_id']}}">
   <label><b>Nombres: </b></label>
   <input type="text" id="juez_nombres" name="juez_nombres" value="{{perfil["juez_nombres"] }}"></br>
   
@@ -27,10 +28,25 @@
   <input type="text" id="juez_contrasena" name="juez_contrasena" value="{{perfil["juez_contrasena"] }}"></br>
   
   <label><b>Dirección del Juzgado</label>
-  <input type="text" id="juez_direccion" name="juez_direccion" value="{{ perfil["juez_direccion"] }}"></br>
-  
+  <select name="juzgadopazletrado_id">
+    % for item in locals['juzgadopazletrado']:
+      % if perfil['juzgado_id'] == item['id']: 
+        <option selected value="{{item['id']}}">{{item['direccion']}}</option>
+      % else:
+        <option value="{{item['id']}}">{{item['direccion']}}</option>
+      % end
+    % end
+  </select><br/>
   <label><b>Sexo: </b></label>
-  <input type="text" id="juez_sexo" name="juez_sexo" value="{{perfil["juez_sexo"] }}"></br>
+  <select name="sexo_id">
+    % for item in locals['sexo']:
+      % if perfil['sexo_id'] == item['id']: 
+        <option selected value="{{item['id']}}">{{item['nombre']}}</option>
+      % else:
+        <option value="{{item['id']}}">{{item['nombre']}}</option>
+      % end
+    % end
+  </select><br/>
   </br>
   <button
     href="/perfil"

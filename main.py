@@ -13,10 +13,9 @@ app = Bottle()
 @app.route('/', method='GET')
 def home():
   locals = {
-    'title': 'Bienvenido',
-    'menu': menu('/'),
+    'title': 'Login',
   }
-  boby_template = template('home', locals = locals)
+  boby_template = template('login/index', locals = locals)
   return HTTPResponse(status = 200, body = boby_template)
 
 @app.route('/:filename#.*#')

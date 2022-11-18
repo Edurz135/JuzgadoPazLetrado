@@ -9,6 +9,15 @@ subapp = Bottle()
 
 @subapp.route('/', method='GET')
 def home():
+  locals = {
+    'title': 'Expedientes',
+    'menu': menu('/expedientes'),
+  }
+  boby_template = template('expedientes/index', locals = locals)
+  return HTTPResponse(status = 200, body = boby_template)
+
+@subapp.route('/detail', method='GET')
+def home():
   expediente_dni = request.params.expediente_dni or 29909077
 
   locals = {
@@ -16,5 +25,5 @@ def home():
     'menu': menu('/expedientes'),
     'expedientes': get_by_dni(expediente_dni),
   }
-  boby_template = template('expedientes/index', locals = locals)
+  boby_template = template('expedientes/detail', locals = locals)
   return HTTPResponse(status = 200, body = boby_template)

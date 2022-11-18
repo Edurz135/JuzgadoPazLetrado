@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="/favicon.png" />
   <title>{{locals['title']}}</title>
-  <link rel="stylesheet" href="styles.css">
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  
 </head>
-<body style="margin: 0; font-family: 'Open Sans'">
+<body style="margin: 0; font-family: Helvetica">
 <ul class="left-menu" style="list-style-type: none; margin: 0; padding: 0; width: 300px; background-color: #9B1513; position: fixed; height: 100%; overflow: auto;">
   <div style="display: flex; align-items: center; justify-content: center; padding-top: 15px; margin-bottom: 30px;">
     <img src="/logo.png" width="95%"/>

@@ -1,6 +1,7 @@
 % include('_header.tpl')
-<h1>Demandas Nro. -Insertar- </h1>
-<p>En esta pestaña encontrará toda la información referida a la demanda Nro. -Insertar-</p>
+% for demanda in locals['demandas_d']:
+<h1>Demanda Nro. {{demanda["demanda_nro_solicitud"]}} </h1>
+<p>En esta pestaña encontrará toda la información referida a la demanda Nro. {{demanda["demanda_nro_solicitud"]}}</p>
 
 
 <div
@@ -15,10 +16,10 @@
   "
 >
   <p> <b> Información general: </b> </p>
-  <p>Descripción</p>
-  <p>-Insertar-</p>
+  <p>Descripción:</p>
+  <p>{{demanda["demanda_descripcion"]}}</p>
   <p>Fecha de emisión</p>
-  <p>-Insertar-</p>
+  <p>{{demanda["demanda_fecha_emision"]}}</p>
 
 </div>
 <div
@@ -32,18 +33,18 @@
 >
   <p> <b> Información personal del demandante: </b> </p>
   <p>INFORMACIÓN DEL ABOGADO ENCARGADO:</p>
-  <p>Nombres: -Insertar-</p>
-  <p>Apellidos: -Insertar-</p>
-  <p>DNI: -Insertar-</p>
-  <p>Sexo: -Insertar-</p>
-  <p>Nro de colegiatura: -Insertar-</p>
+  <p>Nombres: {{demanda["abogado_demandante_nombres"]}}</p>
+  <p>Apellidos: {{demanda["abogado_demandante_apellidos"]}}</p>
+  <p>DNI: {{demanda["abogado_demandante_dni"]}}</p>
+  <p>Sexo: {{demanda["dea_sexo_nombre"]}}</p>
+  <p>Nro de colegiatura: {{demanda["abogado_demandante_nro_c"]}}</p>
   <br/>
   <p>INFORMACIÓN DEL DEMANDANTE:</p>
-  <p>Nombres: -Insertar-</p>
-  <p>Apellidos: -Insertar-</p>
-  <p>DNI: -Insertar-</p>
-  <p>Dirección: -Insertar-</p>
-  <p>Sexo: -Insertar-</p>
+  <p>Nombres: {{demanda["demandante_nombres"]}}</p>
+  <p>Apellidos: {{demanda["demandante_apellidos"]}}</p>
+  <p>DNI: {{demanda["demandante_dni"]}}</p>
+  <p>Dirección: {{demanda["demandante_direccion"]}}</p>
+  <p>Sexo: {{demanda["de_sexo_nombre"]}}</p>
   <br/>
   <br/>
   <a
@@ -73,18 +74,18 @@
 >
   <p> <b> Información personal del demandado: </b> </p>
   <p>INFORMACIÓN DEL ABOGADO ENCARGADO:</p>
-  <p>Nombres: -Insertar-</p>
-  <p>Apellidos: -Insertar-</p>
-  <p>DNI: -Insertar-</p>
-  <p>Sexo: -Insertar-</p>
-  <p>Nro de colegiatura: -Insertar-</p>
+  <p>Nombres: {{demanda["abogado_demandado_nombres"]}}</p>
+  <p>Apellidos: {{demanda["abogado_demandado_apellidos"]}}</p>
+  <p>DNI: {{demanda["abogado_demandado_dni"]}}</p>
+  <p>Sexo: {{demanda["doa_sexo_nombre"]}}</p>
+  <p>Nro de colegiatura: {{demanda["abogado_demandado_nro_c"]}}</p>
   <br/>
   <p>INFORMACIÓN DEL DEMANDADO:</p>
-  <p>Nombres: -Insertar-</p>
-  <p>Apellidos: -Insertar-</p>
-  <p>DNI: -Insertar-</p>
-  <p>Dirección: -Insertar-</p>
-  <p>Sexo: -Insertar-</p>
+  <p>Nombres: {{demanda["demandado_nombres"]}}</p>
+  <p>Apellidos: {{demanda["demandado_apellidos"]}}</p>
+  <p>DNI: {{demanda["demandado_dni"]}}</p>
+  <p>Dirección: {{demanda["demandado_direccion"]}}</p>
+  <p>Sexo: {{demanda["do_sexo_nombre"]}}</p>
   <br/>
   <br/>
   <a
@@ -103,4 +104,5 @@
     <br/>
     <br/>
 </div>
+% end
 % include('_footer.tpl')

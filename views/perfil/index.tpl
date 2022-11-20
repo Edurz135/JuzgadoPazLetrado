@@ -21,7 +21,7 @@
 <br>
 
 <a
-  href="/perfil/editar"
+  href="/perfil/editar?juez_id={{perfil['juez_id']}}"
   style="
     text-decoration: none;
     background-color: #000000;

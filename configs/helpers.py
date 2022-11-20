@@ -4,6 +4,7 @@ def menu(url):
     {'name': 'Perfil', 'url': '/perfil', 'active': False, 'boxicon-name': 'user-circle'},
     {'name': 'Expedientes', 'url': '/expedientes', 'active': False, 'boxicon-name': 'folder-open'},
     {'name': 'Demandas', 'url': '/demandas', 'active': False, 'boxicon-name': 'book-bookmark'},
+    {'name': 'Juzgados', 'url': '/juzgados', 'active': False, 'boxicon-name': 'compass'},
     # {'name': 'Gestión de Estados', 'url': '/state', 'active': False},
     # {'name': 'Gestión de Empleados', 'url': '/worker?step=10&page=1', 'active': False},
     # {'name': 'Gestión de Tickets', 'url': '/ticket?step=10&page=1', 'active': False},

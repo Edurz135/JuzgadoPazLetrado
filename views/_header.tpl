@@ -29,7 +29,7 @@
     </li>
     % end
   % end
-  <li style="padding-left: 15px; margin-bottom: auto;"><a style="display: flex; align-items: center;color: white;padding: 8px 20px; height: 50px; text-decoration: none;" href="#">
+  <li style="padding-left: 15px; margin-bottom: auto;"><a style="display: flex; align-items: center;color: white;padding: 8px 20px; height: 50px; text-decoration: none;" href="/logout">
       <box-icon name="log-out" color='#ffffff' style="margin-right: 25px"></box-icon>
       Cerrar sesión</a>
   </li>

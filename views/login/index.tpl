@@ -25,10 +25,11 @@
         "
       >
         <h2>Login</h2>
-        <form action="/inicio" method="GET">
+        <form action="autenticate" method="POST">
           <label style="font-size: 14px">Usuario</label><br />
           <input
             id="login_username_input"
+            name="login_username_input"
             type="text"
             style="
               border-radius: 5px;
@@ -43,6 +44,7 @@
           <label style="font-size: 14px">Contraseña</label><br />
           <input
             id="login_pswd_input"
+            name="login_pswd_input"
             type="text"
             style="
               border-radius: 5px;

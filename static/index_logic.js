@@ -1,6 +1,5 @@
 
 function dni_detail_redirect() {
-  console.log("asdf")
   input_form = document.getElementById("dni_input");
   url = "http://localhost:8081/expedientes/detail?expediente_dni=" + input_form.value;
   console.log(url)

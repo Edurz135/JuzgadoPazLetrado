@@ -48,7 +48,7 @@
   <br/>
   <br/>
   <a
-  href="#"
+  href="/expedientes/detail?expediente_dni={{demanda["demandante_dni"]}}"
   style="
         text-decoration: none;
         background-color: #BC4745;
@@ -89,7 +89,7 @@
   <br/>
   <br/>
   <a
-  href="#"
+  href="/expedientes/detail?expediente_dni={{demanda["demandado_dni"]}}"
   style="
         text-decoration: none;
         background-color: #BC4745;

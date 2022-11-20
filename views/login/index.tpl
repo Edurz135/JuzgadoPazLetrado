@@ -25,11 +25,10 @@
         "
       >
         <h2>Login</h2>
-        <form action="autenticate" method="POST">
+        <form action="/inicio" method="GET">
           <label style="font-size: 14px">Usuario</label><br />
           <input
             id="login_username_input"
-            name="login_username_input"
             type="text"
             style="
               border-radius: 5px;
@@ -44,7 +43,6 @@
           <label style="font-size: 14px">Contraseña</label><br />
           <input
             id="login_pswd_input"
-            name="login_pswd_input"
             type="text"
             style="
               border-radius: 5px;
@@ -71,7 +69,22 @@
               Login
             </button>
           </div>
-          <br />
+          <br />  
+          <div style="display: flex; justify-content: center">
+          <button
+              id="get_back_button"
+              style="
+                background: #bc4745;
+                padding: 7px 40px;
+                border-radius: 0.5em;
+                text-decoration: none;
+                color: white;
+                border: none;
+              "
+            >
+              Recuperar Contraseña
+            </button>
+            </div>
         </form>
       </div>
     </div>

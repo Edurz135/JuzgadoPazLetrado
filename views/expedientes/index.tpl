@@ -25,7 +25,7 @@
         height: 35px;
         font-size: 16px;
       " required
-      value="29909077"
+      value=""
     />
     <br />
     <br />

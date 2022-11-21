@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from bottle import Bottle, run, template, static_file, request, redirect, HTTPResponse
 from configs.database import engine
-from daos.login_dao import get_juez
+from daos.login_dao import get_juez, get_user, get_password
 from configs.helpers import menu
 from routes.inicio import subapp as inicio_routes
 from routes.expedientes import subapp as expedientes_routes
@@ -38,13 +38,26 @@ def autenticate():
   pswd = request.params.login_pswd_input
 
   juez = get_juez(user, pswd)
-  if not len(juez):
+  
+  if len(juez) == 0:
     redirect('/')
 
   global current_juez_id
-  current_juez_id = juez[0]['id']
+  current_juez_id = juez[0]["juez_id"]
   new_path = '/inicio?juez_id=' + str(current_juez_id)
   redirect(new_path)
+
+@app.route('/olvidar', method='GET')
+def forgot_password():
+  user = request.params.juez_usuario
+
+  locals = {
+    'contrasena' : get_password(user)
+  }
+
+  print(locals)
+  boby_template = template('login/index', locals = locals)
+  return HTTPResponse(status = 200, body = boby_template)
 
 @app.route('/:filename#.*#')
 def send_static(filename):

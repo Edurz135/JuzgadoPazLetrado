@@ -15,12 +15,3 @@ def home():
   }
   boby_template = template('inicio/index', locals = locals)
   return HTTPResponse(status = 200, body = boby_template)
-
-@subapp.route('/olvidar', method='GET')
-def home():
-  user = request.params.juez_usuario
-  locals = {
-    'contrasena' : get_password(user)
-  }
-  boby_template = template('inicio/index', locals = locals)
-  return HTTPResponse(status = 200, body = boby_template)

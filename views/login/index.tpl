@@ -69,6 +69,8 @@
               Login
             </button>
           </div>
+        </form>
+        <form action="/inicio" method="GET">
           <br />  
           <div style="display: flex; justify-content: center">
           <button

@@ -19,6 +19,9 @@ app = Bottle()
 def home():
   locals = {
     'title': 'Login',
+    'user' : '',
+    'contrasena' : '',
+    'message': ''
   }
   if current_juez_id != -1:
     new_path = '/inicio?juez_id=' + str(current_juez_id)
@@ -50,12 +53,20 @@ def autenticate():
 @app.route('/olvidar', method='GET')
 def forgot_password():
   user = request.params.juez_usuario
-
+  query = get_password(user)
+  print(user)
+  pswd = list(query[0].values())[0]
+  msg = ''
+  if(pswd == 'null'):
+    pswd = ''
+    msg = f'El usuario {user} no existe'
   locals = {
-    'contrasena' : get_password(user)
+    'title': 'Login',
+    'user': user,
+    'contrasena' : pswd,
+    'message': msg
   }
-
-  print(locals)
+  
   boby_template = template('login/index', locals = locals)
   return HTTPResponse(status = 200, body = boby_template)
 

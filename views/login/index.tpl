@@ -8,7 +8,7 @@
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    
   </head>
   <body style="background-color: #9b1513; font-family: Helvetica">
     <div style="display: flex; flex-direction: column; justify-content: center; align-items: center">
@@ -31,6 +31,7 @@
             id="login_username_input"
             name="login_username_input"
             type="text"
+            value="{{locals['user']}}"
             style="
               border-radius: 5px;
               min-width: 300px;
@@ -46,6 +47,7 @@
             id="login_pswd_input"
             name="login_pswd_input"
             type="text"
+            value="{{locals['contrasena']}}"
             style="
               border-radius: 5px;
               min-width: 300px;
@@ -72,26 +74,25 @@
             </button>
           </div>
         </form>
-        <form action="/inicio" method="GET">
-          <br />  
-          <form action="/olvidar" method="GET">
-          <div style="display: flex; justify-content: center">
+        <br/>
+        <div style="display: flex; justify-content: center">
           <button
-              id="get_back_button"
-              style="
-                background: #bc4745;
-                padding: 7px 40px;
-                border-radius: 0.5em;
-                text-decoration: none;
-                color: white;
-                border: none;
-              "
-            >
-              Recuperar Contraseña
-            </button>
-            </div>
-        </form>
+            id="get_back_button"
+            style="
+              background: #bc4745;
+              padding: 7px 40px;
+              border-radius: 0.5em;
+              text-decoration: none;
+              color: white;
+              border: none;
+            "
+          >
+            Recuperar Contraseña
+          </button>
+        </div>
+      <p>{{locals["message"]}}</p>
       </div>
     </div>
   </body>
+  <script src="/index.js"></script>
 </html>

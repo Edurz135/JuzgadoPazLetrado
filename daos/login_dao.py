@@ -15,9 +15,10 @@ def get_juez(user, pswd):
 def get_password(user):
   conn = engine.connect()
   stmt = f"""
-  BEGIN
-    GETPSWD('{user}');
-  END; 
+  SELECT
+    GETPSWD('{user}')
+  FROM
+    dual
   """
   return [dict(r) for r in conn.execute(stmt)]
 
